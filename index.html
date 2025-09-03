@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vaibhavi Deshpande - Professional Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f8f7f4; /* Off-white, paper-like background */
+      }
+
+      .font-handwriting {
+        font-family: "Kalam", cursive;
+      }
+
+      .polaroid {
+        background-color: white;
+        padding: 1rem;
+        padding-bottom: 4rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .polaroid-caption {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        right: 1rem;
+        text-align: center;
+      }
+
+      /* Navbar active link style */
+      .nav-link.active {
+        color: #4a90e2;
+        font-weight: 700;
+      }
+
+      /* Timeline styles */
+      .timeline-item {
+        position: relative;
+        padding-bottom: 2.5rem;
+      }
+      .timeline-dot {
+        position: absolute;
+        left: -0.6rem;
+        top: 0.25rem;
+        height: 1.25rem;
+        width: 1.25rem;
+        border: 3px solid #4a5568;
+        border-radius: 50%;
+        background-color: #f8f7f4;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+      .timeline-dot:hover,
+      .timeline-dot.active {
+        background-color: #4a90e2;
+        transform: scale(1.2);
+      }
+      .timeline-line {
+        position: absolute;
+        left: 0;
+        top: 0.25rem;
+        bottom: -0.25rem;
+        width: 3px;
+        background-color: #cbd5e0;
+      }
+
+      .demo-button {
+        background-color: #4a90e2;
+        color: white;
+        padding: 0.5rem 1.5rem;
+        border-radius: 9999px;
+        font-weight: bold;
+        transition: all 0.2s ease;
+      }
+      .demo-button:hover {
+        background-color: #357abd;
+        box-shadow: 0 4px 10px rgba(74, 144, 226, 0.4);
+      }
+    </style>
+  </head>
+  <body class="text-gray-800">
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
+      <div class="container mx-auto max-w-5xl px-4">
+        <div class="flex items-center justify-between h-16">
+          <a
+            href="#home"
+            class="font-handwriting text-2xl font-bold text-gray-700"
+            >Vaibhavi D.</a
+          >
+
+          <!-- Desktop Nav -->
+          <nav class="hidden md:flex space-x-8 text-gray-600">
+            <a
+              href="#philosophy"
+              class="nav-link hover:text-blue-600 transition-colors"
+              >About</a
+            >
+            <a
+              href="#journey"
+              class="nav-link hover:text-blue-600 transition-colors"
+              >Journey</a
+            >
+            <a
+              href="#projects"
+              class="nav-link hover:text-blue-600 transition-colors"
+              >Projects</a
+            >
+            <a
+              href="#contact"
+              class="nav-link hover:text-blue-600 transition-colors"
+              >Contact</a
+            >
+          </nav>
+
+          <!-- Mobile Menu Button -->
+          <button id="mobile-menu-button" class="md:hidden p-2">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Nav -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+        <a href="#philosophy" class="block py-2 px-4 text-sm hover:bg-gray-100"
+          >About</a
+        >
+        <a href="#journey" class="block py-2 px-4 text-sm hover:bg-gray-100"
+          >Journey</a
+        >
+        <a href="#projects" class="block py-2 px-4 text-sm hover:bg-gray-100"
+          >Projects</a
+        >
+        <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-100"
+          >Contact</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <!-- Section 1: Introduction -->
+      <section
+        id="home"
+        class="container mx-auto p-4 md:p-8 max-w-5xl min-h-screen flex items-center"
+      >
+        <div
+          class="w-full text-center flex flex-col items-center justify-center"
+        >
+          <div class="relative w-64 h-72 polaroid rotate-3 mb-8">
+            <!-- TODO: Replace with your professional headshot -->
+            <img
+              src="assets/me.jpeg"
+              alt="Vaibhavi Deshpande"
+              class="w-full h-full object-cover"
+            />
+            <p class="font-handwriting text-xl polaroid-caption">Hello!</p>
+          </div>
+          <h1
+            class="font-handwriting text-5xl md:text-7xl font-bold text-gray-700"
+          >
+            Vaibhavi Deshpande
+          </h1>
+          <p class="text-xl md:text-2xl mt-4 text-gray-600">
+            Full-Stack Engineer & AI/ML Enthusiast
+          </p>
+          <p class="mt-6 max-w-2xl text-lg">
+            "I'm driven by spontaneity and creativity—whether architecting a new
+            system, training a transformer, or planning my next skydiving
+            adventure."
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 2: My Philosophy & Skills -->
+      <section id="philosophy" class="bg-white py-16 md:py-24">
+        <div class="container mx-auto p-4 md:p-8 max-w-5xl">
+          <h2 class="font-handwriting text-4xl md:text-5xl text-center mb-12">
+            My Engineering Philosophy
+          </h2>
+          <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div
+              class="relative w-full max-w-sm mx-auto h-auto polaroid -rotate-2"
+            >
+              <!-- TODO: Replace with an image representing your work philosophy -->
+              <img
+                src="assets/intro.png"
+                alt="User-centric design sketch"
+                class="w-full h-full object-cover"
+              />
+              <p class="font-handwriting text-lg polaroid-caption">
+                Impactful & User-First Solutions
+              </p>
+            </div>
+            <div>
+              <h3 class="font-handwriting text-3xl mb-4">Core Principles</h3>
+              <ul class="space-y-3 text-lg list-disc list-inside">
+                <li>
+                  Build tools that
+                  <span class="font-bold text-blue-600">reduce friction</span>
+                  for users.
+                </li>
+                <li>
+                  Bridge the gap between robust engineering and
+                  <span class="font-bold text-blue-600">cutting-edge AI</span>.
+                </li>
+                <li>
+                  Thrive on solving real-world problems for
+                  <span class="font-bold text-blue-600"
+                    >product-based companies</span
+                  >.
+                </li>
+                <li>
+                  Embrace
+                  <span class="font-bold text-blue-600"
+                    >continuous learning</span
+                  >
+                  and new challenges.
+                </li>
+              </ul>
+              <h3 class="font-handwriting text-3xl mt-8 mb-4">
+                Technical Skills
+              </h3>
+              <div class="text-sm space-y-2">
+                <p>
+                  <strong class="font-semibold">Languages:</strong> C++, Python,
+                  Java, C#
+                </p>
+                <p>
+                  <strong class="font-semibold">Web Dev:</strong> React,
+                  Next.js, Vue.js, Django, Node.js, REST API, TypeScript
+                </p>
+                <p>
+                  <strong class="font-semibold">Databases:</strong> PostgreSQL,
+                  MySQL, MongoDB
+                </p>
+                <p>
+                  <strong class="font-semibold">Tools & AI:</strong> Git,
+                  Docker, Kubernetes, PowerBI, LLMs, Transformers
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: My Journey -->
+      <section id="journey" class="py-16 md:py-24">
+        <div class="container mx-auto p-4 md:p-8 max-w-5xl">
+          <h2 class="font-handwriting text-4xl md:text-5xl text-center mb-12">
+            My Journey
+          </h2>
+          <div class="grid md:grid-cols-3 gap-8">
+            <!-- Timeline Navigation -->
+            <div class="md:col-span-1">
+              <div class="relative">
+                <div class="timeline-line"></div>
+                <div class="timeline-item">
+                  <div
+                    id="dot-best"
+                    class="timeline-dot active"
+                    onclick="showExperience('best')"
+                  ></div>
+                  <div
+                    class="ml-8 cursor-pointer"
+                    onclick="showExperience('best')"
+                  >
+                    <h4 class="font-bold text-lg">Software Engineer</h4>
+                    <p class="text-sm text-gray-600">BEST Inc. (Current)</p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div
+                    id="dot-onecommunity"
+                    class="timeline-dot"
+                    onclick="showExperience('onecommunity')"
+                  ></div>
+                  <div
+                    class="ml-8 cursor-pointer"
+                    onclick="showExperience('onecommunity')"
+                  >
+                    <h4 class="font-bold text-lg">Software Engineer</h4>
+                    <p class="text-sm text-gray-600">One Community Inc.</p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div
+                    id="dot-palash"
+                    class="timeline-dot"
+                    onclick="showExperience('palash')"
+                  ></div>
+                  <div
+                    class="ml-8 cursor-pointer"
+                    onclick="showExperience('palash')"
+                  >
+                    <h4 class="font-bold text-lg">Software Engineer</h4>
+                    <p class="text-sm text-gray-600">PALASH Healthcare</p>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div
+                    id="dot-kaizen"
+                    class="timeline-dot"
+                    onclick="showExperience('kaizen')"
+                  ></div>
+                  <div
+                    class="ml-8 cursor-pointer"
+                    onclick="showExperience('kaizen')"
+                  >
+                    <h4 class="font-bold text-lg">Data Analyst Intern</h4>
+                    <p class="text-sm text-gray-600">Kaizen Chemtech</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experience Details -->
+            <div class="md:col-span-2">
+              <div id="exp-best" class="exp-details">
+                <div class="relative w-full h-auto polaroid rotate-1">
+                  <!-- TODO: Replace with BEST Inc. logo or relevant image -->
+                  <img
+                    src="https://placehold.co/600x300/E2E8F0/4A5568?text=ERP+Automation"
+                    alt="ERP Automation"
+                    class="w-full h-40 object-cover mb-4"
+                  />
+                  <h3 class="font-bold text-xl">
+                    ERP Automation & Financial Workflows
+                  </h3>
+                  <ul class="list-disc list-inside text-sm mt-2 space-y-1">
+                    <li>
+                      Engineered ERP modules with Python, PostgreSQL, & REST
+                      APIs.
+                    </li>
+                    <li>
+                      Improved system usability by 30% and reduced manual errors
+                      by 40%.
+                    </li>
+                    <li>
+                      Built Kafka pipelines for real-time order tracking and
+                      event-driven logging.
+                    </li>
+                    <li>Reduced reporting turnaround for leadership by 50%.</li>
+                  </ul>
+                  <p class="font-handwriting text-lg polaroid-caption">
+                    BEST Inc. | June 2025 - Present
+                  </p>
+                </div>
+              </div>
+              <div id="exp-onecommunity" class="exp-details hidden">
+                <div class="relative w-full h-auto polaroid -rotate-2">
+                  <!-- TODO: Replace with One Community logo or relevant image -->
+                  <img
+                    src="https://placehold.co/600x300/E2E8F0/4A5568?text=Community+Platform"
+                    alt="Community Platform"
+                    class="w-full h-40 object-cover mb-4"
+                  />
+                  <h3 class="font-bold text-xl">
+                    Full-Stack Community Platform Dev
+                  </h3>
+                  <ul class="list-disc list-inside text-sm mt-2 space-y-1">
+                    <li>
+                      Contributed to frontend/backend with Vue.js, Node.js, and
+                      MongoDB.
+                    </li>
+                    <li>Built a global employee map feature for 100+ users.</li>
+                    <li>
+                      Reduced post-production bugs by 30% through rigorous code
+                      reviews.
+                    </li>
+                  </ul>
+                  <p class="font-handwriting text-lg polaroid-caption">
+                    One Community Inc. | Oct 2024 - May 2025
+                  </p>
+                </div>
+              </div>
+              <div id="exp-palash" class="exp-details hidden">
+                <div class="relative w-full h-auto polaroid rotate-2">
+                  <!-- TODO: Replace with PALASH Healthcare logo or relevant image -->
+                  <img
+                    src="https://placehold.co/600x300/E2E8F0/4A5568?text=Healthcare+Solutions"
+                    alt="Healthcare Solutions"
+                    class="w-full h-40 object-cover mb-4"
+                  />
+                  <h3 class="font-bold text-xl">Modular Healthcare Systems</h3>
+                  <ul class="list-disc list-inside text-sm mt-2 space-y-1">
+                    <li>
+                      Built scalable healthcare modules with Next.js, Node.js,
+                      and PostgreSQL.
+                    </li>
+                    <li>
+                      Improved database response times by 25% with async logic.
+                    </li>
+                    <li>
+                      Deployed secure services on Azure, achieving 99%
+                      reliability.
+                    </li>
+                  </ul>
+                  <p class="font-handwriting text-lg polaroid-caption">
+                    PALASH Healthcare | Jul 2020 - Aug 2022
+                  </p>
+                </div>
+              </div>
+              <div id="exp-kaizen" class="exp-details hidden">
+                <div class="relative w-full h-auto polaroid -rotate-1">
+                  <!-- TODO: Replace with Kaizen Chemtech logo or relevant image -->
+                  <img
+                    src="https://placehold.co/600x300/E2E8F0/4A5568?text=Data+Analytics"
+                    alt="Data Analytics"
+                    class="w-full h-40 object-cover mb-4"
+                  />
+                  <h3 class="font-bold text-xl">
+                    Data Analysis & BI Dashboards
+                  </h3>
+                  <ul class="list-disc list-inside text-sm mt-2 space-y-1">
+                    <li>
+                      Built ETL pipelines cutting manual reporting by 50%.
+                    </li>
+                    <li>Predicted sales trends with 99.3% accuracy.</li>
+                    <li>
+                      Reduced inventory costs by 15% through data-driven
+                      insights.
+                    </li>
+                  </ul>
+                  <p class="font-handwriting text-lg polaroid-caption">
+                    Kaizen Chemtech | Jan 2020 - Jun 2020
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Project Showcase -->
+      <section id="projects" class="bg-white py-16 md:py-24">
+        <div class="container mx-auto p-4 md:p-8 max-w-5xl">
+          <h2 class="font-handwriting text-4xl md:text-5xl text-center mb-12">
+            Project Showcase
+          </h2>
+          <div class="grid md:grid-cols-3 gap-8 text-center">
+            <!-- Project 1 -->
+            <div class="flex flex-col items-center">
+              <div class="relative w-full h-auto polaroid -rotate-2 mb-4">
+                <!-- TODO: Replace with screenshot of your project -->
+                <img
+                  src="assets/AIorderValidation.png"
+                  alt="AI Order Validation"
+                  class="w-full h-40 object-cover"
+                />
+                <p class="font-handwriting text-lg polaroid-caption">
+                  AI-Powered Order Validation
+                </p>
+              </div>
+              <p class="text-sm mb-4">
+                Hackathon-winning system using an AI agent (Claude) to automate
+                email order validation.
+              </p>
+              <!-- TODO: Add link to your demo or GitHub -->
+              <a href="https://github.com/VMD281/Zaqathon" class="demo-button"
+                >Github link</a
+              >
+            </div>
+            <!-- Project 2 -->
+            <div class="flex flex-col items-center">
+              <div class="relative w-full h-auto polaroid rotate-1 mb-4">
+                <!-- TODO: Replace with screenshot of your project -->
+                <img
+                  src="assets/mentorhub.png"
+                  alt="MentorHub"
+                  class="w-full h-40 object-cover"
+                />
+                <p class="font-handwriting text-lg polaroid-caption">
+                  MentorHub Platform
+                </p>
+              </div>
+              <p class="text-sm mb-4">
+                CRUD app connecting university alumni and students, with
+                messaging and live notifications.
+              </p>
+              <!-- TODO: Add link to your demo or GitHub -->
+              <a href="#" class="demo-button">[ View on GitHub ]</a>
+            </div>
+            <!-- Project 3 -->
+            <div class="flex flex-col items-center">
+              <div class="relative w-full h-auto polaroid rotate-3 mb-4">
+                <!-- TODO: Replace with screenshot of your project -->
+                <img
+                  src="assets/image.png"
+                  alt="Recommendation System"
+                  class="w-full h-40 object-cover"
+                />
+                <p class="font-handwriting text-lg polaroid-caption">
+                  Retail Recommendation System
+                </p>
+              </div>
+              <p class="text-sm mb-4">
+                Built with BERT embeddings and K-Means clustering to achieve
+                97.8% accuracy.
+              </p>
+              <!-- TODO: Add link to your demo or GitHub -->
+              <a
+                href="https://github.com/VMD281/Recommendation-system"
+                class="demo-button"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5: Beyond the Code -->
+      <section id="about" class="py-16 md:py-24">
+        <div class="container mx-auto p-4 md:p-8 max-w-5xl">
+          <h2 class="font-handwriting text-4xl md:text-5xl text-center mb-12">
+            Beyond the Code
+          </h2>
+          <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div
+              class="relative w-full max-w-sm mx-auto h-auto polaroid -rotate-3"
+            >
+              <!-- TODO: Replace with a photo from one of your adventures -->
+              <img
+                src="assets/adventure.jpg"
+                alt="Adventure sports photo"
+                class="w-full h-full object-cover"
+              />
+              <p class="font-handwriting text-lg polaroid-caption">
+                Skydiving is next!
+              </p>
+            </div>
+            <div>
+              <h3 class="font-handwriting text-3xl mb-4">
+                Embracing Challenges
+              </h3>
+              <p class="text-lg mb-4">
+                My love for adventure sports like scuba diving, rafting, and
+                bungee jumping isn't just a hobby—it's part of my mindset.
+              </p>
+              <p class="text-lg">
+                This mindset of embracing new challenges, staying calm under
+                pressure, and pushing boundaries is something I bring to my
+                professional life every day. It keeps me curious, driven, and
+                always ready for what's next.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 6: Contact -->
+      <footer id="contact" class="bg-gray-800 text-white py-16">
+        <div class="container mx-auto p-4 md:p-8 max-w-5xl text-center">
+          <h2 class="font-handwriting text-5xl md:text-6xl">Let's Connect</h2>
+          <p class="text-xl md:text-2xl mt-4 text-gray-300">
+            I'm ready for the next challenge.
+          </p>
+          <div class="mt-8 flex justify-center space-x-8">
+            <!-- TODO: Add your actual links -->
+            <a
+              href="https://www.linkedin.com/in/vaibhavi-m-d/"
+              class="hover:text-blue-400 transition-colors"
+              >LinkedIn</a
+            >
+            <a href="#" class="hover:text-blue-400 transition-colors"
+              >Portfolio</a
+            >
+            <a
+              href="https://github.com/VMD281"
+              class="hover:text-blue-400 transition-colors"
+              >GitHub</a
+            >
+          </div>
+          <p class="mt-12 text-gray-500 text-sm">
+            vmd703@gmail.com | +1 (407)-927-1819
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      // --- Mobile Menu Toggle ---
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+      // Close mobile menu when a link is clicked
+      mobileMenu.addEventListener("click", (e) => {
+        if (e.target.tagName === "A") {
+          mobileMenu.classList.add("hidden");
+        }
+      });
+
+      // --- Interactive Timeline ---
+      function showExperience(exp) {
+        document
+          .querySelectorAll(".exp-details")
+          .forEach((detail) => detail.classList.add("hidden"));
+        document
+          .querySelectorAll(".timeline-dot")
+          .forEach((dot) => dot.classList.remove("active"));
+        document.getElementById(`exp-${exp}`).classList.remove("hidden");
+        document.getElementById(`dot-${exp}`).classList.add("active");
+      }
+      // Initialize first experience
+      showExperience("best");
+
+      // --- Active Nav Link on Scroll ---
+      const sections = document.querySelectorAll("section");
+      const navLinks = document.querySelectorAll(".nav-link");
+
+      const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.4,
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            navLinks.forEach((link) => {
+              link.classList.remove("active");
+              if (link.getAttribute("href").substring(1) === entry.target.id) {
+                link.classList.add("active");
+              }
+            });
+          }
+        });
+      }, observerOptions);
+
+      sections.forEach((section) => {
+        observer.observe(section);
+      });
+    </script>
+  </body>
+</html>
