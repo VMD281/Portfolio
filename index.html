@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vaibhavi Deshpande - Professional Portfolio</title>
+    <!-- SEO -->
+    <meta name="description" content="Portfolio of Vaibhavi Deshpande — Software Engineer specializing in Python, FastAPI, AI/ML, data engineering, and analytics." />
+    <meta name="keywords" content="Vaibhavi Deshpande, Software Engineer, Python, FastAPI, Machine Learning, Data Engineering, AI, ETL, Power BI, UCF" />
+    <meta name="author" content="Vaibhavi Deshpande" />
+    <meta property="og:title" content="Vaibhavi Deshpande - Software Engineer & AI/ML" />
+    <meta property="og:description" content="Projects in AI agents, ETL, FastAPI, predictive maintenance, and analytics." />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -109,7 +115,12 @@
             <a
               href="#journey"
               class="nav-link hover:text-blue-600 transition-colors"
-              >Journey</a
+              >Experience</a
+            >
+            <a
+              href="#education"
+              class="nav-link hover:text-blue-600 transition-colors"
+              >Education</a
             >
             <a
               href="#projects"
@@ -124,13 +135,15 @@
           </nav>
 
           <!-- Mobile Menu Button -->
-          <button id="mobile-menu-button" class="md:hidden p-2">
+          <button id="mobile-menu-button" class="md:hidden p-2" aria-label="Toggle navigation menu">
             <svg
               class="w-6 h-6"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-hidden="true"
             >
               <path
                 stroke-linecap="round"
@@ -148,7 +161,10 @@
           >About</a
         >
         <a href="#journey" class="block py-2 px-4 text-sm hover:bg-gray-100"
-          >Journey</a
+          >Experience</a
+        >
+        <a href="#education" class="block py-2 px-4 text-sm hover:bg-gray-100"
+          >Education</a
         >
         <a href="#projects" class="block py-2 px-4 text-sm hover:bg-gray-100"
           >Projects</a
@@ -172,7 +188,7 @@
             <!-- TODO: Replace with your professional headshot -->
             <img
               src="assets/me.jpeg"
-              alt="Vaibhavi Deshpande"
+              alt="Portrait of Vaibhavi Deshpande"
               class="w-full h-full object-cover"
             />
             <p class="font-handwriting text-xl polaroid-caption">Hello!</p>
@@ -183,12 +199,10 @@
             Vaibhavi Deshpande
           </h1>
           <p class="text-xl md:text-2xl mt-4 text-gray-600">
-            Full-Stack Engineer & AI/ML Enthusiast
+            Software Engineer • AI/ML & Data Engineering
           </p>
           <p class="mt-6 max-w-2xl text-lg">
-            "I'm driven by spontaneity and creativity—whether architecting a new
-            system, training a transformer, or planning my next skydiving
-            adventure."
+            "Building reliable systems and intelligent workflows that turn raw data into decisions."
           </p>
         </div>
       </section>
@@ -206,7 +220,7 @@
               <!-- TODO: Replace with an image representing your work philosophy -->
               <img
                 src="assets/intro.png"
-                alt="User-centric design sketch"
+                alt="Design sketch illustrating user-first approach"
                 class="w-full h-full object-cover"
               />
               <p class="font-handwriting text-lg polaroid-caption">
@@ -222,13 +236,13 @@
                   for users.
                 </li>
                 <li>
-                  Bridge the gap between robust engineering and
-                  <span class="font-bold text-blue-600">cutting-edge AI</span>.
+                  Bridge robust engineering with
+                  <span class="font-bold text-blue-600">pragmatic AI</span>.
                 </li>
                 <li>
-                  Thrive on solving real-world problems for
+                  Solve real-world problems for
                   <span class="font-bold text-blue-600"
-                    >product-based companies</span
+                    >product-focused teams</span
                   >.
                 </li>
                 <li>
@@ -244,20 +258,24 @@
               </h3>
               <div class="text-sm space-y-2">
                 <p>
-                  <strong class="font-semibold">Languages:</strong> C++, Python,
-                  Java, C#
+                  <strong class="font-semibold">Programming & Scripting:</strong>
+                  Python (Pandas, NumPy, scikit-learn), C++, JavaScript, SQL
                 </p>
                 <p>
-                  <strong class="font-semibold">Web Dev:</strong> React,
-                  Next.js, Vue.js, Django, Node.js, REST API, TypeScript
+                  <strong class="font-semibold">Machine Learning & AI:</strong>
+                  TensorFlow, PyTorch, OpenCV, LangChain, Matplotlib, Seaborn, spaCy, NLTK, RAG
                 </p>
                 <p>
-                  <strong class="font-semibold">Databases:</strong> PostgreSQL,
-                  MySQL, MongoDB
+                  <strong class="font-semibold">Database Management:</strong>
+                  PostgreSQL, MySQL, SQLite, MongoDB
                 </p>
                 <p>
-                  <strong class="font-semibold">Tools & AI:</strong> Git,
-                  Docker, Kubernetes, PowerBI, LLMs, Transformers
+                  <strong class="font-semibold">Tools & Technologies:</strong>
+                  Git, GitHub, Docker, Kubernetes, AWS (S3, RDS), FastAPI, Postman, Power BI, Tableau
+                </p>
+                <p>
+                  <strong class="font-semibold">Certificates:</strong>
+                  AZ-900 Microsoft Azure Fundamentals, Google Analytics
                 </p>
               </div>
             </div>
@@ -265,11 +283,11 @@
         </div>
       </section>
 
-      <!-- Section 3: My Journey -->
+      <!-- Section 3: Experience -->
       <section id="journey" class="py-16 md:py-24">
         <div class="container mx-auto p-4 md:p-8 max-w-5xl">
           <h2 class="font-handwriting text-4xl md:text-5xl text-center mb-12">
-            My Journey
+            Experience
           </h2>
           <div class="grid md:grid-cols-3 gap-8">
             <!-- Timeline Navigation -->
@@ -292,16 +310,16 @@
                 </div>
                 <div class="timeline-item">
                   <div
-                    id="dot-onecommunity"
+                    id="dot-ucf"
                     class="timeline-dot"
-                    onclick="showExperience('onecommunity')"
+                    onclick="showExperience('ucf')"
                   ></div>
                   <div
                     class="ml-8 cursor-pointer"
-                    onclick="showExperience('onecommunity')"
+                    onclick="showExperience('ucf')"
                   >
-                    <h4 class="font-bold text-lg">Software Engineer</h4>
-                    <p class="text-sm text-gray-600">One Community Inc.</p>
+                    <h4 class="font-bold text-lg">Research Assistant</h4>
+                    <p class="text-sm text-gray-600">University of Central Florida</p>
                   </div>
                 </div>
                 <div class="timeline-item">
@@ -314,7 +332,7 @@
                     class="ml-8 cursor-pointer"
                     onclick="showExperience('palash')"
                   >
-                    <h4 class="font-bold text-lg">Software Engineer</h4>
+                    <h4 class="font-bold text-lg">Software Engineer Intern</h4>
                     <p class="text-sm text-gray-600">PALASH Healthcare</p>
                   </div>
                 </div>
@@ -339,82 +357,82 @@
             <div class="md:col-span-2">
               <div id="exp-best" class="exp-details">
                 <div class="relative w-full h-auto polaroid rotate-1">
-                  <!-- TODO: Replace with BEST Inc. logo or relevant image -->
                   <img
                     src="https://placehold.co/600x300/E2E8F0/4A5568?text=ERP+Automation"
                     alt="ERP Automation"
                     class="w-full h-40 object-cover mb-4"
                   />
                   <h3 class="font-bold text-xl">
-                    ERP Automation & Financial Workflows
+                    ERP Data Pipelines, APIs & Predictive Maintenance
                   </h3>
                   <ul class="list-disc list-inside text-sm mt-2 space-y-1">
                     <li>
-                      Engineered ERP modules with Python, PostgreSQL, & REST
-                      APIs.
+                      Engineered Python-based ETL with Pandas & SQLAlchemy to clean and standardize ERP data.
                     </li>
                     <li>
-                      Improved system usability by 30% and reduced manual errors
-                      by 40%.
+                      Built FastAPI services to power real-time Power BI dashboards for maintenance and orders.
                     </li>
                     <li>
-                      Built Kafka pipelines for real-time order tracking and
-                      event-driven logging.
+                      Implemented predictive maintenance models (scikit-learn, XGBoost) for early failure alerts.
                     </li>
-                    <li>Reduced reporting turnaround for leadership by 50%.</li>
+                    <li>
+                      Initiated NLP-based issue logging using spaCy and embeddings for error categorization.
+                    </li>
                   </ul>
                   <p class="font-handwriting text-lg polaroid-caption">
                     BEST Inc. | June 2025 - Present
                   </p>
                 </div>
               </div>
-              <div id="exp-onecommunity" class="exp-details hidden">
+              <div id="exp-ucf" class="exp-details hidden">
                 <div class="relative w-full h-auto polaroid -rotate-2">
-                  <!-- TODO: Replace with One Community logo or relevant image -->
                   <img
-                    src="https://placehold.co/600x300/E2E8F0/4A5568?text=Community+Platform"
-                    alt="Community Platform"
+                    src="https://placehold.co/600x300/E2E8F0/4A5568?text=Clinical+ML+Research"
+                    alt="Clinical ML Research"
                     class="w-full h-40 object-cover mb-4"
                   />
                   <h3 class="font-bold text-xl">
-                    Full-Stack Community Platform Dev
+                    Clinical Data Modeling & Insights
                   </h3>
                   <ul class="list-disc list-inside text-sm mt-2 space-y-1">
                     <li>
-                      Contributed to frontend/backend with Vue.js, Node.js, and
-                      MongoDB.
+                      Processed 1M+ clinical records; standardized 50+ features and derived BMI & lung risk scores.
                     </li>
-                    <li>Built a global employee map feature for 100+ users.</li>
                     <li>
-                      Reduced post-production bugs by 30% through rigorous code
-                      reviews.
+                      Cleaned, normalized, and structured datasets for regression and classification models.
+                    </li>
+                    <li>
+                      Tuned supervised ML models achieving 15% RMSE reduction; identified top 10 predictors.
+                    </li>
+                    <li>
+                      Built visualizations and reports for researchers and clinicians.
                     </li>
                   </ul>
                   <p class="font-handwriting text-lg polaroid-caption">
-                    One Community Inc. | Oct 2024 - May 2025
+                    University of Central Florida | Aug 2024 - May 2025
                   </p>
                 </div>
               </div>
               <div id="exp-palash" class="exp-details hidden">
                 <div class="relative w-full h-auto polaroid rotate-2">
-                  <!-- TODO: Replace with PALASH Healthcare logo or relevant image -->
                   <img
-                    src="https://placehold.co/600x300/E2E8F0/4A5568?text=Healthcare+Solutions"
-                    alt="Healthcare Solutions"
+                    src="https://placehold.co/600x300/E2E8F0/4A5568?text=Healthcare+Automation"
+                    alt="Healthcare Automation"
                     class="w-full h-40 object-cover mb-4"
                   />
-                  <h3 class="font-bold text-xl">Modular Healthcare Systems</h3>
+                  <h3 class="font-bold text-xl">Healthcare Data Automation & Dashboards</h3>
                   <ul class="list-disc list-inside text-sm mt-2 space-y-1">
                     <li>
-                      Built scalable healthcare modules with Next.js, Node.js,
-                      and PostgreSQL.
+                      Tested and validated backend APIs for patient and insurance claim data exchange.
                     </li>
                     <li>
-                      Improved database response times by 25% with async logic.
+                      Automated OCR-driven data entry using AWS Textract for scanned documents and PDFs.
                     </li>
                     <li>
-                      Deployed secure services on Azure, achieving 99%
-                      reliability.
+                      Built Playwright automation for COVID-19 slot capture and HIMS scheduler updates.
+                    </li>
+                    <li>
+                      Developed Power BI dashboards by transforming admission data with Python and SQL.
                     </li>
                   </ul>
                   <p class="font-handwriting text-lg polaroid-caption">
@@ -424,23 +442,23 @@
               </div>
               <div id="exp-kaizen" class="exp-details hidden">
                 <div class="relative w-full h-auto polaroid -rotate-1">
-                  <!-- TODO: Replace with Kaizen Chemtech logo or relevant image -->
                   <img
-                    src="https://placehold.co/600x300/E2E8F0/4A5568?text=Data+Analytics"
-                    alt="Data Analytics"
+                    src="https://placehold.co/600x300/E2E8F0/4A5568?text=Sales+Analytics"
+                    alt="Sales Analytics"
                     class="w-full h-40 object-cover mb-4"
                   />
                   <h3 class="font-bold text-xl">
-                    Data Analysis & BI Dashboards
+                    Data Workflows & Sales Forecasting
                   </h3>
                   <ul class="list-disc list-inside text-sm mt-2 space-y-1">
                     <li>
-                      Built ETL pipelines cutting manual reporting by 50%.
+                      Built automated data workflows with SQL, Python, and Excel; delivered Power BI dashboards.
                     </li>
-                    <li>Predicted sales trends with 99.3% accuracy.</li>
                     <li>
-                      Reduced inventory costs by 15% through data-driven
-                      insights.
+                      Performed cleaning, outlier handling, normalization, and feature engineering with Pandas/NumPy.
+                    </li>
+                    <li>
+                      Created derived metrics and predictive models (~90% accuracy) to reduce inventory costs (~12%).
                     </li>
                   </ul>
                   <p class="font-handwriting text-lg polaroid-caption">
@@ -460,13 +478,12 @@
             Project Showcase
           </h2>
           <div class="grid md:grid-cols-3 gap-8 text-center">
-            <!-- Project 1 -->
+            <!-- Project 1: AI Order Validation -->
             <div class="flex flex-col items-center">
               <div class="relative w-full h-auto polaroid -rotate-2 mb-4">
-                <!-- TODO: Replace with screenshot of your project -->
                 <img
                   src="assets/AIorderValidation.png"
-                  alt="AI Order Validation"
+                  alt="AI-Powered Automated Order Validation"
                   class="w-full h-40 object-cover"
                 />
                 <p class="font-handwriting text-lg polaroid-caption">
@@ -474,38 +491,32 @@
                 </p>
               </div>
               <p class="text-sm mb-4">
-                Hackathon-winning system using an AI agent (Claude) to automate
-                email order validation.
+                FastAPI backend with an AI agent (Claude) to parse emails and validate orders; deployed with Docker on AWS.
               </p>
-              <!-- TODO: Add link to your demo or GitHub -->
               <a href="https://github.com/VMD281/Zaqathon" class="demo-button"
-                >Github link</a
+                >GitHub</a
               >
             </div>
-            <!-- Project 2 -->
+            <!-- Project 2: Multi-Agent Medical Intelligence -->
             <div class="flex flex-col items-center">
               <div class="relative w-full h-auto polaroid rotate-1 mb-4">
-                <!-- TODO: Replace with screenshot of your project -->
                 <img
                   src="assets/mentorhub.png"
-                  alt="MentorHub"
+                  alt="Multi-Agent Medical Intelligence System"
                   class="w-full h-40 object-cover"
                 />
                 <p class="font-handwriting text-lg polaroid-caption">
-                  MentorHub Platform
+                  Multi-Agent Medical Intelligence
                 </p>
               </div>
               <p class="text-sm mb-4">
-                CRUD app connecting university alumni and students, with
-                messaging and live notifications.
+                Claude LLM with LangChain/LangGraph and RAG to retrieve PubMed evidence; FastAPI microservices orchestrate agents.
               </p>
-              <!-- TODO: Add link to your demo or GitHub -->
-              <a href="#" class="demo-button">[ View on GitHub ]</a>
+              <a href="#" class="demo-button">[ Repo / Demo ]</a>
             </div>
             <!-- Project 3 -->
             <div class="flex flex-col items-center">
               <div class="relative w-full h-auto polaroid rotate-3 mb-4">
-                <!-- TODO: Replace with screenshot of your project -->
                 <img
                   src="assets/image.png"
                   alt="Recommendation System"
@@ -516,15 +527,32 @@
                 </p>
               </div>
               <p class="text-sm mb-4">
-                Built with BERT embeddings and K-Means clustering to achieve
-                97.8% accuracy.
+                BERT embeddings with K-Means clustering for personalized product recommendations.
               </p>
-              <!-- TODO: Add link to your demo or GitHub -->
               <a
                 href="https://github.com/VMD281/Recommendation-system"
                 class="demo-button"
                 >GitHub</a
               >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4.5: Education -->
+      <section id="education" class="py-16 md:py-24">
+        <div class="container mx-auto p-4 md:p-8 max-w-5xl">
+          <h2 class="font-handwriting text-4xl md:text-5xl text-center mb-12">Education</h2>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="polaroid rotate-1 relative">
+              <h3 class="font-bold text-xl">Master of Science — Computer Science</h3>
+              <p class="text-sm text-gray-600">University of Central Florida | GPA: 3.9</p>
+              <p class="text-sm mt-2">Aug 2022 — May 2024</p>
+            </div>
+            <div class="polaroid -rotate-1 relative">
+              <h3 class="font-bold text-xl">Bachelor of Technology — Electronics & Telecommunication</h3>
+              <p class="text-sm text-gray-600">Pune University</p>
+              <p class="text-sm mt-2">Aug 2018 — May 2022</p>
             </div>
           </div>
         </div>
@@ -577,19 +605,26 @@
             I'm ready for the next challenge.
           </p>
           <div class="mt-8 flex justify-center space-x-8">
-            <!-- TODO: Add your actual links -->
             <a
               href="https://www.linkedin.com/in/vaibhavi-m-d/"
               class="hover:text-blue-400 transition-colors"
+              aria-label="LinkedIn profile of Vaibhavi Deshpande"
               >LinkedIn</a
             >
-            <a href="#" class="hover:text-blue-400 transition-colors"
+            <a href="#home" class="hover:text-blue-400 transition-colors"
               >Portfolio</a
             >
             <a
               href="https://github.com/VMD281"
               class="hover:text-blue-400 transition-colors"
+              aria-label="GitHub profile of Vaibhavi Deshpande"
               >GitHub</a
+            >
+            <a
+              href="mailto:vmd703@gmail.com"
+              class="hover:text-blue-400 transition-colors"
+              aria-label="Email Vaibhavi Deshpande"
+              >Email</a
             >
           </div>
           <p class="mt-12 text-gray-500 text-sm">
