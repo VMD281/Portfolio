@@ -207,11 +207,11 @@
         </div>
       </section>
 
-      <!-- Section 2: My Philosophy & Skills -->
+      <!-- Section 2: About Me -->
       <section id="philosophy" class="bg-white py-16 md:py-24">
         <div class="container mx-auto p-4 md:p-8 max-w-5xl">
           <h2 class="font-handwriting text-4xl md:text-5xl text-center mb-12">
-            My Engineering Philosophy
+            About Me
           </h2>
           <div class="grid md:grid-cols-2 gap-8 items-center">
             <div
@@ -229,7 +229,7 @@
             </div>
             <div>
               <h3 class="font-handwriting text-3xl mb-4">Core Principles</h3>
-              <ul class="space-y-3 text-lg list-disc list-inside">
+              <ul class="space-y-3 text-lg list-disc list-outside pl-5">
                 <li>
                   Design systems that
                   <span class="font-bold text-blue-600">reduce friction</span>
@@ -240,7 +240,7 @@
                   <span class="font-bold text-blue-600">pragmatic AI and data-driven workflows</span>
                 </li>
                 <li>
-                   
+                     
                   <span class="font-bold text-blue-600"
                     >Solve real-world problems</span
                   > using ML, analytics, and automation
@@ -706,8 +706,12 @@
 
       // Apply to hero quote
       preventWidow(document.querySelector('#home p.mt-6.max-w-2xl'));
+      // Apply to About caption
+      preventWidow(document.querySelector('#philosophy .polaroid-caption'));
       // Apply to all Experience bullets
       document.querySelectorAll('#journey .exp-details li').forEach(preventWidow);
+      // Apply to About bullets
+      document.querySelectorAll('#philosophy li').forEach(preventWidow);
     </script>
   </body>
 </html>
