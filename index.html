@@ -202,7 +202,7 @@
             Software engineering, Data science, Machine learning
           </p>
           <p class="mt-6 max-w-2xl text-lg">
-            "Building reliable systems and intelligent workflows that turn raw data into decisions."
+            "Building reliable systems and intelligent workflows that transform data into actionable insights."
           </p>
         </div>
       </section>
@@ -695,6 +695,21 @@
       sections.forEach((section) => {
         observer.observe(section);
       });
+
+      // --- Prevent single-word widows in specific text blocks ---
+      function preventWidow(el) {
+        if (!el) return;
+        const html = el.innerHTML.trim();
+        const withoutTags = html.replace(/<[^>]*>/g, "");
+        if (withoutTags.split(/\s+/).length < 3) return; // skip very short
+        // Replace the last normal space between the final two words with &nbsp;
+        el.innerHTML = html.replace(/\s+(\S+)(\s*)$/, "&nbsp;$1$2");
+      }
+
+      // Apply to hero quote
+      preventWidow(document.querySelector('#home p.mt-6.max-w-2xl'));
+      // Apply to all Experience bullets
+      document.querySelectorAll('#journey .exp-details li').forEach(preventWidow);
     </script>
   </body>
 </html>
