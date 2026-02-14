@@ -1,1 +1,24 @@
- 
+<svg width="1200" height="600" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Minimalist illustration representing fraudulent job postings detection">
+  <rect width="1200" height="600" fill="#F3F4F6"/>
+  <g transform="translate(220,120)">
+    <!-- Job listing card -->
+    <rect x="0" y="0" width="640" height="360" rx="16" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <rect x="32" y="40" width="320" height="20" rx="4" fill="#111827"/>
+    <rect x="32" y="80" width="420" height="16" rx="4" fill="#4B5563"/>
+    <rect x="32" y="110" width="380" height="16" rx="4" fill="#9CA3AF"/>
+    <rect x="32" y="140" width="440" height="16" rx="4" fill="#D1D5DB"/>
+
+    <!-- Shield check for legit -->
+    <g transform="translate(520,32)">
+      <path d="M48 0 L96 24 L96 64 C96 92 73 120 48 128 C23 120 0 92 0 64 L0 24 Z" fill="#10B981"/>
+      <path d="M28 64 L44 80 L68 52" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Warning badge for fraud -->
+    <g transform="translate(520,184)">
+      <circle cx="48" cy="48" r="48" fill="#F59E0B"/>
+      <rect x="44" y="24" width="8" height="40" rx="4" fill="#111827"/>
+      <rect x="44" y="70" width="8" height="8" rx="2" fill="#111827"/>
+    </g>
+  </g>
+</svg> 

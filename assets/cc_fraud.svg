@@ -1,1 +1,18 @@
- 
+<svg width="1200" height="600" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Minimalist illustration representing credit card fraud detection">
+  <rect width="1200" height="600" fill="#F3F4F6"/>
+  <g transform="translate(260,140)">
+    <!-- Credit card -->
+    <rect x="0" y="0" width="520" height="320" rx="20" fill="#111827"/>
+    <rect x="40" y="60" width="180" height="20" rx="4" fill="#374151"/>
+    <rect x="40" y="100" width="320" height="20" rx="4" fill="#374151"/>
+    <rect x="40" y="200" width="140" height="20" rx="4" fill="#4B5563"/>
+    <!-- Alert badge -->
+    <g transform="translate(420,-40)">
+      <circle cx="64" cy="64" r="64" fill="#EF4444"/>
+      <rect x="58" y="26" width="12" height="48" rx="6" fill="#FFFFFF"/>
+      <rect x="58" y="82" width="12" height="12" rx="3" fill="#FFFFFF"/>
+    </g>
+    <!-- Anomaly waveform -->
+    <path d="M0,320 C60,260 120,360 180,300 C240,260 300,340 360,260 C420,220 480,360 520,280" fill="none" stroke="#3B82F6" stroke-width="6" stroke-linecap="round"/>
+  </g>
+</svg> 

@@ -1,1 +1,36 @@
- 
+<svg width="1200" height="600" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Minimalist illustration representing handwritten character recognition">
+  <rect width="1200" height="600" fill="#F3F4F6"/>
+  <g transform="translate(300,120)">
+    <rect x="0" y="0" width="560" height="360" rx="16" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <!-- grid cells -->
+    <g fill="#E5E7EB">
+      <rect x="24" y="24" width="64" height="64" rx="8"/>
+      <rect x="112" y="24" width="64" height="64" rx="8"/>
+      <rect x="200" y="24" width="64" height="64" rx="8"/>
+      <rect x="288" y="24" width="64" height="64" rx="8"/>
+      <rect x="376" y="24" width="64" height="64" rx="8"/>
+      <rect x="464" y="24" width="64" height="64" rx="8"/>
+
+      <rect x="24" y="112" width="64" height="64" rx="8"/>
+      <rect x="112" y="112" width="64" height="64" rx="8"/>
+      <rect x="200" y="112" width="64" height="64" rx="8"/>
+      <rect x="288" y="112" width="64" height="64" rx="8"/>
+      <rect x="376" y="112" width="64" height="64" rx="8"/>
+      <rect x="464" y="112" width="64" height="64" rx="8"/>
+
+      <rect x="24" y="200" width="64" height="64" rx="8"/>
+      <rect x="112" y="200" width="64" height="64" rx="8"/>
+      <rect x="200" y="200" width="64" height="64" rx="8"/>
+      <rect x="288" y="200" width="64" height="64" rx="8"/>
+      <rect x="376" y="200" width="64" height="64" rx="8"/>
+      <rect x="464" y="200" width="64" height="64" rx="8"/>
+    </g>
+    <!-- stylized handwritten stroke -->
+    <path d="M40,160 C90,120 140,220 190,180 C230,150 270,210 300,190 C340,160 400,180 440,140" fill="none" stroke="#4A90E2" stroke-width="8" stroke-linecap="round"/>
+    <!-- magnifier -->
+    <g transform="translate(420,220)">
+      <circle cx="48" cy="48" r="40" fill="none" stroke="#1F2937" stroke-width="6"/>
+      <rect x="80" y="80" width="12" height="36" rx="6" fill="#1F2937"/>
+    </g>
+  </g>
+</svg> 
