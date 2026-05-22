@@ -371,6 +371,46 @@
               <h4 class="serif text-base font-semibold" style="color: var(--ink)">Fraudulent Job Postings</h4>
               <p class="text-xs my-2 flex-grow" style="color: var(--muted)">A BERT and DistilBERT classifier, reaching 99.05 percent accuracy.</p>
             </div>
+            <div class="card p-4 flex flex-col">
+              <div class="shot-wrap mb-3 flex items-center justify-center" style="height: calc(11rem + 1rem)">
+                <svg viewBox="0 0 120 90" width="80%" height="80%" aria-hidden="true">
+                  <rect x="12" y="14" width="34" height="28" rx="3" fill="#f5e9ee" stroke="#8c405b" stroke-width="2"/>
+                  <circle cx="22" cy="23" r="3" fill="#a85571"/>
+                  <path d="M14 40 L24 30 L32 38 L38 32 L44 40 Z" fill="#a85571"/>
+                  <g stroke="#a85571" stroke-width="2.4" stroke-linecap="round"><line x1="72" y1="20" x2="106" y2="20"/><line x1="72" y1="28" x2="100" y2="28"/><line x1="72" y1="36" x2="106" y2="36"/></g>
+                  <line x1="46" y1="28" x2="70" y2="28" stroke="#caa9b6" stroke-width="1.4" stroke-dasharray="3 3"/>
+                  <g fill="#a85571"><rect x="22" y="58" width="14" height="22" rx="2"/><rect x="46" y="64" width="14" height="16" rx="2"/><rect x="70" y="70" width="14" height="10" rx="2"/></g>
+                  <path d="M88 75 l12 0 m-5 -5 l5 5 l-5 5" fill="none" stroke="#8c405b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h4 class="serif text-base font-semibold" style="color: var(--ink)">CLIP Model Quantization</h4>
+              <p class="text-xs my-2 flex-grow" style="color: var(--muted)">Quantized the CLIP vision and language model with ONNX Runtime to cut memory and compute for low resource devices, tested on CIFAR 100. The quantized model held about 80 percent validation accuracy while running faster than the full precision baseline.</p>
+            </div>
+            <div class="card p-4 flex flex-col">
+              <div class="shot-wrap mb-3 flex items-center justify-center" style="height: calc(11rem + 1rem)">
+                <svg viewBox="0 0 120 90" width="80%" height="80%" aria-hidden="true">
+                  <path d="M22 16 H98 a8 8 0 0 1 8 8 V54 a8 8 0 0 1 -8 8 H46 L34 74 V62 H22 a8 8 0 0 1 -8 -8 V24 a8 8 0 0 1 8 -8 Z" fill="#f5e9ee" stroke="#8c405b" stroke-width="2"/>
+                  <rect x="34" y="44" width="12" height="12" rx="2" fill="#caa9b6"/>
+                  <rect x="54" y="34" width="12" height="22" rx="2" fill="#a85571"/>
+                  <rect x="74" y="26" width="12" height="30" rx="2" fill="#8c405b"/>
+                </svg>
+              </div>
+              <h4 class="serif text-base font-semibold" style="color: var(--ink)">Twitter Sentiment Analysis</h4>
+              <p class="text-xs my-2 flex-grow" style="color: var(--muted)">Fine tuned BERT to classify tweet sentiment as positive, neutral, or negative, with text cleaning, tokenization, and label encoding. Reached about 90 percent accuracy with balanced precision and recall.</p>
+            </div>
+            <div class="card p-4 flex flex-col">
+              <div class="shot-wrap mb-3 flex items-center justify-center" style="height: calc(11rem + 1rem)">
+                <svg viewBox="0 0 120 90" width="80%" height="80%" aria-hidden="true">
+                  <rect x="12" y="14" width="36" height="62" rx="3" fill="#ffffff" stroke="#8c405b" stroke-width="2"/>
+                  <g stroke="#caa9b6" stroke-width="2" stroke-linecap="round"><line x1="18" y1="24" x2="42" y2="24"/><line x1="18" y1="32" x2="42" y2="32"/><line x1="18" y1="40" x2="42" y2="40"/><line x1="18" y1="48" x2="42" y2="48"/><line x1="18" y1="56" x2="42" y2="56"/><line x1="18" y1="64" x2="36" y2="64"/></g>
+                  <path d="M54 45 l14 0 m-5 -5 l5 5 l-5 5" fill="none" stroke="#8c405b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <rect x="76" y="30" width="32" height="30" rx="3" fill="#f5e9ee" stroke="#8c405b" stroke-width="2"/>
+                  <g stroke="#a85571" stroke-width="2.6" stroke-linecap="round"><line x1="82" y1="40" x2="102" y2="40"/><line x1="82" y1="47" x2="98" y2="47"/><line x1="82" y1="54" x2="102" y2="54"/></g>
+                </svg>
+              </div>
+              <h4 class="serif text-base font-semibold" style="color: var(--ink)">News Summarization</h4>
+              <p class="text-xs my-2 flex-grow" style="color: var(--muted)">Abstractive news summarization on the CNN DailyMail dataset using a sequence to sequence LSTM with attention and a T5 transformer, evaluated with ROUGE and BLEU.</p>
+            </div>
           </div>
         </div>
       </section>
